@@ -7,7 +7,8 @@
 
 #define BUFFER_SIZE 1024
 
-void print_error_and_exit(int exit_code, const char *format, ...) {
+void print_error_and_exit(int exit_code, const char *format, ...)
+ {
     va_list args;
     va_start(args, format);
     dprintf(2, format, args);
